@@ -1,0 +1,82 @@
+﻿<Window x:Class="ExerciseBussLineWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExerciseBussLineWPF"
+        mc:Ignorable="d"
+        Title="Busline program" Height="461" Width="800">
+    <Grid Margin="0,0,0,-6">
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" ImageSource="/1.jpg"/>
+        </Grid.Background>
+        <Label x:Name="myLabelOne" Content="Hållplats 1" HorizontalAlignment="Left" Margin="50,20,0,0" VerticalAlignment="Top" Height="35" Width="100" FontSize="18" Foreground="White">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Label x:Name="myLabelTwo" Content="Hållplats 2" HorizontalAlignment="Left" Margin="200,20,0,0" VerticalAlignment="Top" Height="35" Width="100" FontSize="18" Foreground="White">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Label x:Name="myLabelThree" Content="Hållplats 3" HorizontalAlignment="Left" Margin="350,20,0,0" VerticalAlignment="Top" Height="35" Width="100" FontSize="18" Foreground="White">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Label x:Name="myLabelFour" Content="Hållplats 4" HorizontalAlignment="Left" Margin="500,20,0,0" VerticalAlignment="Top" Height="35" Width="100" FontSize="18" Foreground="White">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Label x:Name="myLabelFive" Content="Hållplats 5" HorizontalAlignment="Left" Margin="662,20,0,0" VerticalAlignment="Top" Height="35" Width="100" FontSize="18" RenderTransformOrigin="0.485,-0.527" Foreground="White">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <ListBox x:Name="listBox_0_" Margin="20,70,635,240">
+            <ListBox.Effect>
+                <DropShadowEffect/>
+            </ListBox.Effect>
+        </ListBox>
+        <ListBox x:Name="listBox_1_" Margin="170,70,485,240">
+            <ListBox.Effect>
+                <DropShadowEffect/>
+            </ListBox.Effect>
+        </ListBox>
+        <ListBox x:Name="listBox_2_" Margin="320,70,325,240">
+            <ListBox.Effect>
+                <DropShadowEffect/>
+            </ListBox.Effect>
+        </ListBox>
+        <ListBox x:Name="listBox_3_" Margin="480,70,165,240">
+            <ListBox.Effect>
+                <DropShadowEffect/>
+            </ListBox.Effect>
+        </ListBox>
+        <ListBox x:Name="listBox_4_" Margin="640,70,16,240">
+            <ListBox.Effect>
+                <DropShadowEffect/>
+            </ListBox.Effect>
+        </ListBox>
+        <Button x:Name="Drive_Button" Content="Kör bussen till nästa station" HorizontalAlignment="Left" Margin="335,360,0,0" VerticalAlignment="Top" Height="58" Width="430" FontSize="24" Click="Drive_Button_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Image x:Name="myImageOne" HorizontalAlignment="Left" Height="100" Margin="40,210,0,0" VerticalAlignment="Top" Width="120" Source="/Förskolebussen1.jpg" Stretch="Fill" Visibility="Hidden"/>
+        <Image x:Name="myImageTwo" HorizontalAlignment="Left" Height="100" Margin="185,210,0,0" VerticalAlignment="Top" Width="128" Source="/Förskolebussen1.jpg" Stretch="Fill" Visibility="Hidden"/>
+        <Image x:Name="myImageThree" HorizontalAlignment="Left" Height="100" Margin="335,210,0,0" VerticalAlignment="Top" Width="126" Source="/Förskolebussen1.jpg" Stretch="Fill" Visibility="Hidden"/>
+        <Image x:Name="myImageFour" HorizontalAlignment="Left" Height="100" Margin="485,210,0,0" VerticalAlignment="Top" Width="130" Source="/Förskolebussen1.jpg" Stretch="Fill" Visibility="Hidden"/>
+        <Image x:Name="myImageFive" HorizontalAlignment="Left" Height="100" Margin="635,210,0,0" VerticalAlignment="Top" Width="127" Source="/Förskolebussen1.jpg" Stretch="Fill" Visibility="Hidden"/>
+        <Rectangle HorizontalAlignment="Left" Height="53" Margin="20,365,0,0" Stroke="Black" VerticalAlignment="Top" Width="194" Fill="#FFBF3939">
+            <Rectangle.Effect>
+                <DropShadowEffect/>
+            </Rectangle.Effect>
+        </Rectangle>
+        <Label Content="Passagerare på bussen:" HorizontalAlignment="Left" Margin="20,365,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.434,0.599" Height="34" Width="154" FontSize="14" Foreground="White"/>
+        <Label x:Name="nrOfPassengersLabel" Content="0" HorizontalAlignment="Left" Margin="20,382,0,0" VerticalAlignment="Top" FontSize="18" Height="46" Width="46" Foreground="White"/>
+
+    </Grid>
+</Window>
